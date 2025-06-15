@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EvoFit AI - Your Intelligent Personal Trainer</title>
+<!-- Google Fonts for aesthetics -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #0069d9;
+    }
+
+    nav a {
+        color: #fff;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #0056b3;
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url('https://images.unsplash.com/photo-1601050691943-2c6deabad0b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+    }
+
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        background-color: #ff4b2b;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #e04421;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .testimonial {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 250px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+    }
+
+    .testimonial p {
+        font-style: italic;
+    }
+
+    /* Features */
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .feature-box {
+        flex: 1 1 200px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h3 {
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+
+    /* How It Works */
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps {
+        display: flex;
+        justify-content
